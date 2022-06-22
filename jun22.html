@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>June 22nd, 2022</h1>
+    <h2>Summary of Simurda et al. (2020)</h2>
+<p>
+    For this week's blog, I'm going to briefly discuss a paper titled "Assessing Lava Flow Subpixel Surface Roughness and Particle Size Distribution for Improved Thermal Inertia Interpretations" by Simurda et al. (2020). This paper is concerned with a philosophical question that has plagued many a remote sensing researcher since time immemorial: just how accurately does a single pixel actually reflect the surface of whatever object you're looking at? With worse and worse resolution data, the likelihood that the actual surface holds more detail than what your pixel is telling you only increases. The authors talk about this issue in the context of interpreting ATI, or apparent thermal inertia. <a href="feb9.html">In an earlier blog post</a>, I talked a bit about thermal inertia, and how we generally see a clear trend when it comes to correlating the thermal inertia of a surface with grain size: a surface composed of fine-grained material is going to have a lower thermal inertia, meaning that heat is less retained over time, while a surface comprised of a single large outcrop will have a higher thermal inertia, meaning more heat is retained. As the authors are trying to better understand how to interpret remote sensing data of lava flow surfaces mantled by fine-grained material, such as its composition and grain-size distribution, they suggest that a better understanding of how sub-pixel variations in grain sizes affect thermal inertia values.
+</p>
+<div class="items">
+    <center><figure>
+        <img src="simurda_fig_8.png" width="511.33" height="303.33">
+        <figcaption><i>Figure 8 from Simurda et al. (2020), showing a ternary diagram that depicts the areal percentage of each particle-size category mapped as well as the corresponding ATI pixel values.</i></figcaption>
+    </figure></center>
+<br>
+<p>
+    Multiple remote sensing and field datasets are used, focusing on a rhyolite flow that's covered by a variety of different particle sizes. WorldView-2 VNIR data is used to map different categories of grain sizes, including fine, moderate, and coarse-grained materials, with fine-grained materials comprising sand and coarse-grained materials referring to large lava blocks or boulders. These particle sizes are further defined by the amount of shadowing present in remote sensing imagery, with coarse-grained particles having the largest shadowing present. ASTER VNIR and TIR data is used to calculate ATI for the study site, and surface roughness is calculated from a photogrammetry-derived point cloud. A key result of this study was somewhat surprising: when comparing the thermal inertia values with the different categories of grain sizes on the surfaces, the area of the highest ATI corresponded to one comprised of mostly moderate-sized particles, not coarse-sized as one might predict. A possible explanation for this may be the greater amount of shadowing present in areas dominated by large boulders might be lowering the ATI when averaging over one pixel. In addition, there may be enough space for fine or moderate-sized particles to lower the ATI value for a pixel with coarse-sized material, while moderate-sized material may have less room for smaller particle sizes to lower the ATI value on a pixel scale.
+</p>
+</body>
+</html>
